@@ -1,5 +1,5 @@
 name: Bug Report | گزارش مشکل
-description: Report a bug encountered while using BPB Panel
+description: Report a bug encountered while using DinoWorker Panel
 body:
     - type: markdown
       attributes:
@@ -10,7 +10,7 @@ body:
       id: confirm-search
       attributes:
           label: Attention | توجه
-          description: Please search [existing issues](https://github.com/bia-pain-bache/BPB-Worker-Panel/issues) before reporting | لطفا قبل از ارسال گزارش [ایشوهای موجود](https://github.com/bia-pain-bache/BPB-Worker-Panel/issues) را بررسی کنید.
+          description: Please search [existing issues](https://github.com/bia-pain-bache/DinoWorker-Worker-Panel/issues) before reporting | لطفا قبل از ارسال گزارش [ایشوهای موجود](https://github.com/bia-pain-bache/DinoWorker-Worker-Panel/issues) را بررسی کنید.
           options:
               - label: I searched and no similar issues were found | جستجو کردم و هیچ گزارش مشابهی پیدا نشد
                 required: true

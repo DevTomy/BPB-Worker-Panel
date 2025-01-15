@@ -6,7 +6,7 @@
 ## قدم اول - Cloudflare Pages
 اگر اکانت کلود فلر ندارید از [اینجا](https://dash.cloudflare.com/sign-up) یک اکانت بسازید (اینجا هم فقط یک ایمیل برای ثبت نام لازم دارید، بخاطر حساسیت‌های کلادفلر توصیه میکنم از ایمیل‌های معتبر مثل Gmail استفاده کنید).
 
-از [اینجا](https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.zip) فایل زیپ ورکر رو دانلود کنید.
+از [اینجا](https://github.com/bia-pain-bache/DinoWorker-Worker-Panel/releases/latest/download/worker.zip) فایل زیپ ورکر رو دانلود کنید.
 
 حالا در اکانت کلادفلرتون از منوی سمت چپ وارد قسمت `Workers and Pages` بشید و `Create Application` رو بزنید و `Pages` رو انتخاب کنید:
 
@@ -109,4 +109,4 @@
 
 <h1 align="center">بروز‌رسانی پنل</h1>
 
-برای بروزرسانی مثل مرحله‌ی ساخت از [اینجا](https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.zip) فایل زیپ جدید رو دانلود کنید. در اکانت کلادفلرتون برید به قسمت `Workers and Pages` و وارد اون پروژه‌ی Pages بشید که ساختید، از بالای صفحه `Create deployment` رو بزنید و دوباره مثل اول همون فایل zip جدید رو آپلود کنید و تمام.
+برای بروزرسانی مثل مرحله‌ی ساخت از [اینجا](https://github.com/bia-pain-bache/DinoWorker-Worker-Panel/releases/latest/download/worker.zip) فایل زیپ جدید رو دانلود کنید. در اکانت کلادفلرتون برید به قسمت `Workers and Pages` و وارد اون پروژه‌ی Pages بشید که ساختید، از بالای صفحه `Create deployment` رو بزنید و دوباره مثل اول همون فایل zip جدید رو آپلود کنید و تمام.

@@ -5,7 +5,7 @@ export async function renderSecretsPage () {
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BPB Generator</title>
+    <title>DinoWorker Generator</title>
     <style>
         :root {
             --color: black;
@@ -108,7 +108,7 @@ export async function renderSecretsPage () {
     </head>
     <body>
         <div class="container">
-            <h1>BPB Panel <span style="font-size: smaller;">${globalThis.panelVersion}</span> 💦</h1>
+            <h1>DinoWorker Panel <span style="font-size: smaller;">${globalThis.panelVersion}</span> ♾️</h1>
             <div class="form-container">
                 <h2>Secrets generator</h2>
                 <div>

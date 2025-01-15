@@ -1,4 +1,4 @@
-<h1 align="center">💦 BPB Panel</h1>
+<h1 align="center">♾️ DinoWorker Panel</h1>
 
 ### 🌏 Readme in [Farsi](README_fa.md)
 
@@ -13,7 +13,7 @@ This project is dedicated to developing a user panel for the [Cloudflare-workers
 - **Pages** deployment
 <br>
 
-🌟 If you found **BPB Panel** valuable, Your donations make all the difference 🌟
+🌟 If you found **DinoWorker Panel** valuable, Your donations make all the difference 🌟
 - **USDT (BEP20):** `0x111EFF917E7cf4b0BfC99Edffd8F1AbC2b23d158`
 
 ## Features
@@ -64,7 +64,7 @@ This project is dedicated to developing a user panel for the [Cloudflare-workers
 ---
 
 ## Stargazers Over Time
-[![Stargazers Over Time](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel.svg?variant=adaptive)](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel)
+[![Stargazers Over Time](https://starchart.cc/bia-pain-bache/DinoWorker-Worker-Panel.svg?variant=adaptive)](https://starchart.cc/bia-pain-bache/DinoWorker-Worker-Panel)
 
 ---
 

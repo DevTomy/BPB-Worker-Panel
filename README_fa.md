@@ -1,4 +1,4 @@
-<h1 align="center">💦 پنل BPB</h1>
+<h1 align="center">♾️ پنل DinoWorker</h1>
 
 #### 🌏 [English](README.md)
 
@@ -17,7 +17,7 @@
 - راه‌اندازی با **Cloudflare Worker**
 <br>
 
-🌟 اگر پروژه‌ی **BPB Panel** براتون مفید بوده، حمایت شما مایه‌ی دلگرمی من هست 🌟
+🌟 اگر پروژه‌ی **DinoWorker Panel** براتون مفید بوده، حمایت شما مایه‌ی دلگرمی من هست 🌟
 <ul dir="rtl">
   <li><code>0x111EFF917E7cf4b0BfC99Edffd8F1AbC2b23d158</code> <strong>:USDT (BEP20)</strong></li>
 </ul>
@@ -147,7 +147,7 @@
 ---
 ## تعداد ستاره‌ها به مرور زمان
 
-[![تعداد ستاره‌ها به مرور زمان](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel.svg?variant=adaptive)](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel)
+[![تعداد ستاره‌ها به مرور زمان](https://starchart.cc/bia-pain-bache/DinoWorker-Worker-Panel.svg?variant=adaptive)](https://starchart.cc/bia-pain-bache/DinoWorker-Worker-Panel)
 
 ---
 ### تشکر ویژه
