@@ -67,7 +67,8 @@ export async function renderHomePage (proxySettings, isPassSet) {
         
     const subQR = (path, app, tag, title, sbType) => {
         const uuid = localStorage.getItem('uuid');
-        const url = `${sbType ? 'sing-box://import-remote-profile?url=' : ''}https://${globalThis.hostName}/${path}/${globalThis.subPath}${app ? `?app=${app}` : ''}${uuid ? `&uuid=${uuid}` : ''}#${tag}`;
+        const wsPath = uuid ? `/${uuid}` : '';
+        const url = `${sbType ? 'sing-box://import-remote-profile?url=' : ''}https://${globalThis.hostName}${wsPath}/${path}/${globalThis.subPath}${app ? `?app=${app}` : ''}${uuid ? `&uuid=${uuid}` : ''}#${tag}`;
         return `
             <button onclick="openQR('${url}', '${title}')" style="margin-bottom: 8px;">
                 QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>

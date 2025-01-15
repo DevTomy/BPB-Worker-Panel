@@ -1,5 +1,6 @@
 import { connect } from 'cloudflare:sockets';
 import { isValidUUID } from '../helpers/helpers';
+import { validateSubscription } from '../api/subscription.js';
 
 /**
  * Handles VLESS over WebSocket requests by creating a WebSocket pair, accepting the WebSocket connection, and processing the VLESS header.
@@ -289,12 +290,11 @@ async function processVLHeader(VLBuffer, userID) {
     const slicedBuffer = new Uint8Array(VLBuffer.slice(1, 17));
     const slicedBufferString = stringify(slicedBuffer);
 
-    const uuids = userID.includes(",") ? userID.split(",") : [userID];
+    // چک کردن UUID با API اودین‌نت
+    const isValidInApi = await validateSubscription(slicedBufferString);
+    isValidUser = isValidInApi;
 
-    const checkUuidInApi = await checkUuidInApiResponse(slicedBufferString);
-    isValidUser = uuids.some((userUuid) => checkUuidInApi || slicedBufferString === userUuid.trim());
-
-    console.log(`checkUuidInApi: ${await checkUuidInApiResponse(slicedBufferString)}, userID: ${slicedBufferString}`);
+    console.log(`UUID validation: API=${isValidInApi}, UUID=${slicedBufferString}`);
 
     if (!isValidUser) {
         return {

@@ -11,6 +11,7 @@ import { getNormalConfigs } from './cores-configs/normalConfigs';
 import { fallback, getMyIP, handlePanel } from './helpers/helpers';
 import { renderSecretsPage } from './pages/secrets';
 import { authMiddleware } from './middleware/auth.js';
+import { wsAuthMiddleware } from './middleware/ws-auth.js';
 
 export default {
     async fetch(request, env) {
@@ -69,6 +70,9 @@ export default {
                         return await fallback(request);
                 }
             } else {
+                const wsAuthResponse = await wsAuthMiddleware(request);
+                if (wsAuthResponse) return wsAuthResponse;
+                
                 return globalThis.pathName.startsWith('/tr') 
                     ? await TROverWSHandler(request) 
                     : await VLOverWSHandler(request);
