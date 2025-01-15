@@ -52,7 +52,7 @@ export default {
                     case '/my-ip':
                         return await getMyIP(request);
 
-                    case '/secrets':
+                    case '/secret':
                         return await renderSecretsPage();
 
                     default:
