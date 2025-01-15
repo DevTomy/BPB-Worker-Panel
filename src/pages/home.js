@@ -95,34 +95,34 @@ export async function renderHomePage (proxySettings, isPassSet) {
         <style>
             :root {
                 --color: black;
-                --primary-color: #09639f;
-                --secondary-color: #3498db;
-                --header-color: #09639f; 
+                --primary-color: #ff0000;
+                --secondary-color: #cc0000;
+                --header-color: #ff0000; 
                 --background-color: #fff;
                 --form-background-color: #f9f9f9;
                 --table-active-color: #f2f2f2;
                 --hr-text-color: #3b3b3b;
                 --lable-text-color: #333;
                 --border-color: #ddd;
-                --button-color: #09639f;
+                --button-color: #ff0000;
                 --input-background-color: white;
-                --header-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+                --header-shadow: 2px 2px 4px rgba(255, 0, 0, 0.25);
             }
             body { font-family: Twemoji Country Flags, system-ui; background-color: var(--background-color); color: var(--color) }
             body.dark-mode {
                 --color: white;
-                --primary-color: #09639F;
-                --secondary-color: #3498DB;
-                --header-color: #3498DB; 
-                --background-color: #121212;
+                --primary-color: #ff0000;
+                --secondary-color: #cc0000;
+                --header-color: #ff0000; 
+                --background-color: #000000;
                 --form-background-color: #121212;
-                --table-active-color: #252525;
-                --hr-text-color: #D5D5D5;
-                --lable-text-color: #DFDFDF;
-                --border-color: #353535;
-                --button-color: #3498DB;
-                --input-background-color: #252525;
-                --header-shadow: 2px 2px 4px rgba(255, 255, 255, 0.25);
+                --table-active-color: #1a1a1a;
+                --hr-text-color: #ffffff;
+                --lable-text-color: #ffffff;
+                --border-color: #333333;
+                --button-color: #ff0000;
+                --input-background-color: #1a1a1a;
+                --header-shadow: 2px 2px 4px rgba(255, 0, 0, 0.25);
             }
             .material-symbols-outlined {
                 margin-left: 5px;
@@ -233,8 +233,8 @@ export async function renderHomePage (proxySettings, isPassSet) {
             .button:hover,
             table button:hover,
             table button:focus {
-                background-color: #2980b9;
-                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+                background-color: #cc0000;
+                box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
                 transform: translateY(-2px);
             }
             .header-container button:hover {
@@ -265,7 +265,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
             }
             th, td { padding: 10px; border-bottom: 1px solid var(--border-color); }
             td div { display: flex; align-items: center; }
-            th { background-color: var(--secondary-color); color: white; font-weight: bold; font-size: 1.1rem; width: 50%;}
+            th { background-color: #cc0000; color: white; font-weight: bold; font-size: 1.1rem; width: 50%;}
             td:last-child { background-color: var(--table-active-color); }               
             tr:hover { background-color: var(--table-active-color); }
             .modal {
@@ -607,7 +607,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="noiseDelayMin">🕞 Noise Delay</label>
+                        <label for="noiseDelayMin">�� Noise Delay</label>
                         <div class="min-max">
                             <input type="number" id="noiseDelayMin" name="noiseDelayMin"
                                 value="${noiseDelayMin}" min="1" required>
@@ -695,7 +695,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
                     </tr>
                 </table>
             </div>
-            <h2>🔗 FULL NORMAL SUB</h2>
+            <h2>�� FULL NORMAL SUB</h2>
             <div class="table-container">
                 <table id="full-normal-configs-table">
                     <tr>
