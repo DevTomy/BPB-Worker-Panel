@@ -12,6 +12,7 @@ export function initializeParams(request, env) {
     globalThis.proxyIP = proxyIPs ? proxyIPs[Math.floor(Math.random() * proxyIPs.length)] : 'bpb.yousef.isegaro.com';
     globalThis.hostName = request.headers.get('Host');
     globalThis.pathName = url.pathname;
+    
     globalThis.client = searchParams.get('app');
     globalThis.urlOrigin = url.origin;
     globalThis.dohURL = env.DOH_URL || 'https://cloudflare-dns.com/dns-query';
