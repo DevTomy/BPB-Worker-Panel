@@ -66,7 +66,8 @@ export async function renderHomePage (proxySettings, isPassSet) {
         </div>`).join('');
         
     const subQR = (path, app, tag, title, sbType) => {
-        const url = `${sbType ? 'sing-box://import-remote-profile?url=' : ''}https://${globalThis.hostName}/${path}/${globalThis.subPath}${app ? `?app=${app}` : ''}#${tag}`;
+        const uuid = localStorage.getItem('uuid');
+        const url = `${sbType ? 'sing-box://import-remote-profile?url=' : ''}https://${globalThis.hostName}/${path}/${globalThis.subPath}${app ? `?app=${app}` : ''}${uuid ? `&uuid=${uuid}` : ''}#${tag}`;
         return `
             <button onclick="openQR('${url}', '${title}')" style="margin-bottom: 8px;">
                 QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
@@ -74,7 +75,8 @@ export async function renderHomePage (proxySettings, isPassSet) {
     };
     
     const subURL = (path, app, tag) => {
-        const url = `https://${globalThis.hostName}/${path}/${globalThis.subPath}${app ? `?app=${app}` : ''}#${tag}`;
+        const uuid = localStorage.getItem('uuid');
+        const url = `https://${globalThis.hostName}/${path}/${globalThis.subPath}${app ? `?app=${app}` : ''}${uuid ? `&uuid=${uuid}` : ''}#${tag}`;
         return `
             <button onclick="copyToClipboard('${url}')">
                 Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
@@ -97,7 +99,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
                 --color: black;
                 --primary-color: #ff0000;
                 --secondary-color: #cc0000;
-                --header-color: #ff0000; 
+                --header-color: #ff0000;
                 --background-color: #fff;
                 --form-background-color: #f9f9f9;
                 --table-active-color: #f2f2f2;
@@ -113,7 +115,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
                 --color: white;
                 --primary-color: #ff0000;
                 --secondary-color: #cc0000;
-                --header-color: #ff0000; 
+                --header-color: #ff0000;
                 --background-color: #000000;
                 --form-background-color: #121212;
                 --table-active-color: #1a1a1a;
@@ -607,7 +609,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="noiseDelayMin">�� Noise Delay</label>
+                        <label for="noiseDelayMin">🕞 Noise Delay</label>
                         <div class="min-max">
                             <input type="number" id="noiseDelayMin" name="noiseDelayMin"
                                 value="${noiseDelayMin}" min="1" required>
@@ -695,7 +697,7 @@ export async function renderHomePage (proxySettings, isPassSet) {
                     </tr>
                 </table>
             </div>
-            <h2>�� FULL NORMAL SUB</h2>
+            <h2>🔗 FULL NORMAL SUB</h2>
             <div class="table-container">
                 <table id="full-normal-configs-table">
                     <tr>

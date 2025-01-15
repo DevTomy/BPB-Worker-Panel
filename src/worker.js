@@ -10,6 +10,7 @@ import { getClashNormalConfig, getClashWarpConfig } from './cores-configs/clash'
 import { getNormalConfigs } from './cores-configs/normalConfigs';
 import { fallback, getMyIP, handlePanel } from './helpers/helpers';
 import { renderSecretsPage } from './pages/secrets';
+import { authMiddleware } from './middleware/auth.js';
 
 export default {
     async fetch(request, env) {
