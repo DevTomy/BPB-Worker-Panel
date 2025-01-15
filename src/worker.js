@@ -23,17 +23,26 @@ export default {
                         return await updateWarpConfigs(request, env);
 
                     case `/sub/${globalThis.subPath}`:
+                        const authResponse1 = await authMiddleware(request);
+                        if (authResponse1) return authResponse1;
+                        
                         if (globalThis.client === 'sfa') return await getSingBoxCustomConfig(request, env, false);
                         if (globalThis.client === 'clash') return await getClashNormalConfig(request, env);
                         if (globalThis.client === 'xray') return await getXrayCustomConfigs(request, env, false);
                         return await getNormalConfigs(request, env);                        
 
                     case `/fragsub/${globalThis.subPath}`:
+                        const authResponse2 = await authMiddleware(request);
+                        if (authResponse2) return authResponse2;
+                        
                         return globalThis.client === 'hiddify'
                             ? await getSingBoxCustomConfig(request, env, true)
                             : await getXrayCustomConfigs(request, env, true);
 
                     case `/warpsub/${globalThis.subPath}`:
+                        const authResponse3 = await authMiddleware(request);
+                        if (authResponse3) return authResponse3;
+                        
                         if (globalThis.client === 'clash') return await getClashWarpConfig(request, env);   
                         if (globalThis.client === 'singbox' || globalThis.client === 'hiddify') return await getSingBoxWarpConfig(request, env, globalThis.client);
                         return await getXrayWarpConfigs(request, env, globalThis.client);
