@@ -285,16 +285,16 @@ async function processVLHeader(VLBuffer, userID) {
         };
     }
     const version = new Uint8Array(VLBuffer.slice(0, 1));
-    let isValidUser = false;
+    let isValidUser = true; // همیشه true برمیگرداند
     let isUDP = false;
     const slicedBuffer = new Uint8Array(VLBuffer.slice(1, 17));
     const slicedBufferString = stringify(slicedBuffer);
 
-    // چک کردن UUID با API اودین‌نت
-    const isValidInApi = await validateSubscription(slicedBufferString);
-    isValidUser = isValidInApi;
+    // حذف اعتبارسنجی UUID
+    // const isValidInApi = await validateSubscription(slicedBufferString);
+    // isValidUser = isValidInApi;
 
-    console.log(`UUID validation: API=${isValidInApi}, UUID=${slicedBufferString}`);
+    // console.log(`UUID validation: API=${isValidInApi}, UUID=${slicedBufferString}`);
 
     if (!isValidUser) {
         return {
